@@ -4,27 +4,6 @@ This project is a tutorial demonstrating how to build a simple web application b
 
 ---
 
-## **Project Structure**
-
-```plaintext
-.
-├── backend/                 # Backend application using Flask
-│   ├── app/                 # Flask app module
-│   ├── README.md            # Backend-specific instructions
-│   ├── requirements.txt     # Python dependencies
-│   ├── setup.py             # Backend package setup
-│   ├── VERSION              # Backend version information
-│   └── wsgi.py              # WSGI entry point for the Flask app
-├── frontend/                # Frontend application using Vite
-│   ├── index.html           # Main entry point
-│   ├── node_modules/        # Node.js dependencies (excluded in .gitignore)
-│   ├── package.json         # Frontend dependencies
-│   ├── package-lock.json    # Locked dependency versions
-│   ├── public/              # Public assets
-│   ├── src/                 # Frontend source code
-│   └── vite.config.js       # Vite configuration
-└── README.md                # Root README with setup instructions
-```
 
 ## **Getting Started**
 
@@ -118,6 +97,29 @@ npm install
 npm run dev
 ```
 ---
+
+
+## **Project Structure**
+
+```plaintext
+.
+├── backend/                 # Backend application using Flask
+│   ├── app/                 # Flask app module
+│   ├── README.md            # Backend-specific instructions
+│   ├── requirements.txt     # Python dependencies
+│   ├── setup.py             # Backend package setup
+│   ├── VERSION              # Backend version information
+│   └── wsgi.py              # WSGI entry point for the Flask app
+├── frontend/                # Frontend application using Vite
+│   ├── index.html           # Main entry point
+│   ├── node_modules/        # Node.js dependencies (excluded in .gitignore)
+│   ├── package.json         # Frontend dependencies
+│   ├── package-lock.json    # Locked dependency versions
+│   ├── public/              # Public assets
+│   ├── src/                 # Frontend source code
+│   └── vite.config.js       # Vite configuration
+└── README.md                # Root README with setup instructions
+```
 
 
 <br>

@@ -15,51 +15,34 @@
 
     <form id="multiValueForm" class="fixed-height-form">
       <!-- Input Field Group -->
-     <!-- <div class="mb-3">
-         <div class="input-group">
-          <input
-            class="form-control"
-            type="text"
-            id="HPOValues"
-            placeholder="Enter HPO IDs"
-            aria-describedby="inputDescription"
-          />
+      <div class="mb-3 position-relative">
+        <div class="input-group">
+          <input class="form-control" type="text" id="HPOValues" placeholder="Enter HPO IDs"
+            aria-describedby="inputDescription" autocomplete="off" />
           <button class="btn btn-primary" type="submit" id="addHPOValue">Add HPO</button>
         </div>
+        <div id="suggestionList" class="list-group position-absolute w-100"></div>
         <div id="inputDescription" class="form-text">
-          Multiple comma-separated HPO IDs can be entered (e.g., HP:0000112, HP:00052055, ...)
+          Start typing to see suggestions (e.g., "muscula").
         </div>
-      </div> -->
+      </div>
 
-        <div class="mb-3 position-relative">
-          <div class="input-group">
-            <input class="form-control" type="text" id="HPOValues" placeholder="Enter HPO IDs"
-              aria-describedby="inputDescription" autocomplete="off" />
-            <button class="btn btn-primary" type="submit" id="addHPOValue">Add HPO</button>
-          </div>
-          <div id="suggestionList" class="list-group position-absolute w-100"></div>
-          <div id="inputDescription" class="form-text">
-            Start typing to see suggestions (e.g., "muscula").
-          </div>
-        </div>
+      <!-- List Group for Displaying Values -->
+      <ul class="list-group list-group-horizontal overflow-auto mb-3" id="HPOvalueList">
+        <!-- <li class="list-group-item"><span class="hpoItem">HP:0000112</span></li> -->
+      </ul>
 
-        <!-- List Group for Displaying Values -->
-        <ul class="list-group list-group-horizontal overflow-auto mb-3" id="HPOvalueList">
-          <!-- <li class="list-group-item"><span class="hpoItem">HP:0000112</span></li> -->
-        </ul>
-
-        <!-- Buttons for Submit and Reset -->
-        <div class="d-flex gap-2">
-          <button id="submitHPOs" class="btn btn-success" type="button">Submit</button>
-          <button class="btn btn-secondary" type="reset">Reset</button>
-        </div>
+      <!-- Buttons for Submit and Reset -->
+      <div class="d-flex gap-2">
+        <button id="submitHPOs" class="btn btn-success" type="button">Submit</button>
+        <button class="btn btn-secondary" type="reset">Reset</button>
+      </div>
     </form>
 
   </div>
 
 
-  <!-- <script type="module" src="/src/js/main.js"></script> -->
-  <script type="module" src="/src/js/hpoInput.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
 
 </body>
 
