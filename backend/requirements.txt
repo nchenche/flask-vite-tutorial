@@ -1,0 +1,1 @@
+-e git+https://github.com/Boehringer-Ingelheim/pyPept.git#egg=pyPept

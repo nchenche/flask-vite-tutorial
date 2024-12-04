@@ -1,0 +1,43 @@
+# Python-related ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.env
+*.venv
+env/
+venv/
+ENV/
+
+# Log files
+*.log
+logs/
+
+
+# Virtual Environment
+.venv/
+env/
+ENV/
+virtualenv/
+
+# Node.js/Vite-related ignores
+node_modules/
+dist/
+build/
+*.cache/
+.vite/
+
+# OS-specific ignores
+.DS_Store
+Thumbs.db
+
+# IDE-specific ignores
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak

@@ -1,0 +1,35 @@
+.fixed-height-form {
+    height: 300px;
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    /* Optional: Visual boundary for the form */
+    padding: 1rem;
+    overflow: hidden;
+    /* Prevent content overflow */
+}
+
+.hpoItem {
+    background-color: rgba(15, 59, 201, 0.562);
+    color: white;
+    padding: 8px;
+    font-size: small;
+    font-weight: 600;
+    border-radius: 10px;
+    border-color: black;
+}
+
+#suggestionList {
+    z-index: 1050;
+    /* Ensure it appears above other elements */
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+#suggestionList .list-group-item {
+    cursor: pointer;
+}
