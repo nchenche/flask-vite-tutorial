@@ -1,8 +1,7 @@
 import os
-
 import app
 
-application = app.create_app(config_name=os.getenv('FLASK_ENV', 'production'))
+application = app.create_app(config_name=os.getenv('FLASK_ENV', 'production'))  # production, dev or test
 
 
 if __name__ == '__main__':

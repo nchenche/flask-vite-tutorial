@@ -1,5 +1,5 @@
 
-import { postFormData, fetchSuggestions } from '../services/api.js'
+import { postFormData, fetchSuggestions } from '../services/api.js';
 
 
 /**
@@ -90,7 +90,7 @@ export function setupHPOInput() {
     let timeout; // For debouncing API calls
     inputField.addEventListener('input', () => {
         const query = inputField.value.trim();
-        console.log(query)
+        // console.log(query);
         if (query.length < 3) {
             suggestionList.innerHTML = ''; // Clear suggestions if query is too short
             return;

@@ -7,10 +7,11 @@ start_time = time.time()  # Track when the app starts
 bp = Blueprint('health', __name__)
 
 
-@bp.route('/', methods=['GET'])
-def status():
+@bp.route('', methods=['GET'])
+def status_():
     uptime = time.time() - start_time
     response = {
+        "location": __name__,
         "status": True,
         "message": "Flask API is running...",
         "version": "0.0.1",
